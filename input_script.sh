@@ -18,10 +18,12 @@ log ">------------------------------>"
 # Nhận input từ người dùng
 read -p "Nhập thông tin bạn muốn lưu: " user_input
 
-# Kiểm tra input
+# Nếu không thông tin từ người dùng
 if [[ -z "$user_input" ]]; then
-  echo "Bạn chưa nhập thông tin."
-  log "Không có thông tin từ người dùng"
+  echo "----------------------------------
+Lỗi: Bạn chưa nhập thông tin."
+  log "Lỗi: Không có thông tin từ người dùng"
+  log "<------------------------------<"
   exit 1
 fi
 
