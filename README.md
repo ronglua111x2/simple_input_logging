@@ -16,11 +16,18 @@ Clone repo này
   cd simple_input_logging
 ```
 
+Cấp quyền cho file script
+
+```bash
+  chmod +x input_script.sh
+```
+
 Chạy file script
 ```bash
- /.input_script
+ ./input_script.sh
 ```
 
 Kiểm tra file log
 ```bash
 cat user_input.log | grep 'Thông tin nhập'
+```
