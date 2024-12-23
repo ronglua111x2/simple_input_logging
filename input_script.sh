@@ -5,7 +5,6 @@ SCRIPT_DIR=$(dirname "$0")
 
 # Tạo file log nếu chưa tồn tại
 LOG_DIR="$SCRIPT_DIR"
-mkdir -p "$LOG_DIR"
 
 # Định nghĩa file log
 LOG_FILE="$LOG_DIR/user_input.log"
@@ -16,7 +15,7 @@ log() {
 }
 
 # Bắt đầu ghi log
-log "Script bắt đầu chạy"
+log ">----------Script bắt đầu chạy----------<"
 
 # Nhận input từ người dùng
 read -p "Nhập thông tin bạn muốn lưu: " user_input
@@ -28,10 +27,12 @@ if [[ -z "$user_input" ]]; then
 fi
 
 # Thông báo lưu trữ thông tin thành công
-echo "Lưu thông tin thành công. Sử dụng \"cat user_input.log | grep 'Thông tin nhập'\" để kiểm tra"
+echo "Lưu thông tin thành công!
+Sử dụng \"cat user_input.log | grep 'Thông tin nhập'\" để kiểm tra."
 
 # Ghi thông tin người dùng nhập
 log "Thông tin nhập: $user_input"
 
 # Thông báo hoàn thành
-log "Script kết thúc"
+log ">------------Script kết thúc------------<"
+
