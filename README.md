@@ -1,6 +1,6 @@
 # Mô tả 
 
-Bash script này sẽ lưu thông tin người dùng nhập vào 1 file log tại thư mục chứa file script này.
+Bash script này sẽ lưu thông tin người dùng nhập vào 1 file log tại thư mục chứa nó.
 
 ## Hướng dẫn sử dụng 
 
