@@ -27,7 +27,8 @@ if [[ -z "$user_input" ]]; then
 fi
 
 # Thông báo lưu trữ thông tin thành công
-echo "Lưu thông tin thành công!
+echo "----------------------------------
+Lưu thông tin thành công!
 Sử dụng \"cat user_input.log | grep 'Thông tin nhập'\" để kiểm tra."
 
 # Ghi thông tin người dùng nhập
@@ -35,4 +36,3 @@ log "Thông tin nhập: $user_input"
 
 # Thông báo hoàn thành
 log ">------------Script kết thúc------------<"
-
